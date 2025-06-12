@@ -1,0 +1,72 @@
+.App {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.app-fix {
+  position: fixed;
+}
+
+.circle-main {
+  margin-top: 200px;
+  background-color: aquamarine;
+}
+
+.circle-div {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.circle-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#3491b4 3.9deg, #4c5154 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(210deg);
+}
+
+.center-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #131b1e;
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cut {
+  position: absolute;
+  top: 210px;
+  left: 10px;
+  width: 240px;
+  height: 100px;
+
+  background-color: #131b1e;
+}
+
+.circle-font {
+  color: #69c9d0;
+  z-index: 50;
+  transform: rotate(150deg);
+  font-family: "Nunito Sans", "sans-serif";
+  font-size: 30px;
+  margin: 0px;
+}
+
+.circle-percen {
+  position: absolute;
+  color: #9ea2a6;
+  z-index: 55;
+  top: 50px;
+  font-family: "Nunito", "sans-serif";
+  font-size: 20px;
+  font-weight: 600;
+}
