@@ -124,10 +124,10 @@ function App() {
       form.current.email.value;
     emailjs
       .sendForm(
-        "service_3i33l4d",
-        "template_5kz5gty",
+        "service_rrxk28a",
+        "template_amo9twg",
         form.current,
-        "8J8ys7wkMk3tIRnQ8"
+        "aoCb671Lc0HxyNdn9"
       )
       .then(
         (result) => {
