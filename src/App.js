@@ -74,11 +74,11 @@ function App() {
     const timer = setInterval(() => {
       setCount((prev) => prev + 1);
       setinterval(timer);
-    }, 30);
+    }, 40);
     const degtimer = setInterval(() => {
       setDeg((prev) => prev + 1);
       setDeginterval(degtimer);
-    }, 10);
+    }, 1);
   };
 
   if (count === stop) {
@@ -118,7 +118,10 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    form.current.message.value += "\n\nSent from: " + form.current.email.value;
+    form.current.message.value +=
+      form.current.messageTemp.value +
+      "\n\nSent from: " +
+      form.current.email.value;
     emailjs
       .sendForm(
         "service_3i33l4d",
@@ -138,6 +141,7 @@ function App() {
         }
       );
   };
+
   useEffect(() => {
     const handleScroll = () => {
       const aboutDiv = refAbout.current.offsetTop;
@@ -329,7 +333,7 @@ function App() {
           ref={refSkill}
         >
           <motion.div
-            className="w-11/12 h-auto lg:w-2/3"
+            className="w-11/12 h-auto lg:w-5/6 xl:w-3/4 2xl:w-2/3 "
             variants={scrollAnimation}
             initial="offscreen"
             whileInView={"onscreen"}
@@ -556,7 +560,7 @@ function App() {
           id="work"
           ref={refWork}
         >
-          <div className="w-11/12 h-auto lg:w-2/3">
+          <div className="w-11/12 h-auto lg:w-5/6 xl:w-3/4 2xl:w-2/3 ">
             <div className="flex flex-col justify-center items-center ">
               <h3 className="font-primary text-blueEdit text-titleFont lg:text-6xl lg:pb-5">
                 My Projects
@@ -1068,7 +1072,7 @@ function App() {
           id="contact"
           ref={refContact}
         >
-          <div className="w-11/12 h-auto md:w-11/12 lg:w-2/3">
+          <div className="w-11/12 h-auto md:w-11/12 lg:w-5/6 xl:w-3/4 2xl:w-2/3 ">
             <motion.div
               className="flex flex-col"
               variants={scrollAnimation}
@@ -1197,13 +1201,20 @@ function App() {
                       className="w-full p-3 bg-textbg text-white rounded-md border border-[3px] border-texticonbg focus:outline-none focus:border-blueEdit bg-transparent"
                     ></input>
                     <textarea
-                      id="message"
-                      name="message"
+                      id="messageTemp"
+                      name="messageTemp"
                       rows="4"
                       required
                       aria-required="true"
                       placeholder="Your Message here..."
                       className="w-full p-3 mt-6 bg-textbg text-white rounded-md border border-[3px] border-texticonbg focus:outline-none focus:border-blueEdit bg-transparent"
+                    ></textarea>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Your Message here..."
+                      className="w-full p-3 mt-6 bg-textbg text-white rounded-md border border-[3px] border-texticonbg focus:outline-none focus:border-blueEdit bg-transparent hidden"
                     ></textarea>
                     <button
                       type="submit"

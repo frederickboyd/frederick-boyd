@@ -15,7 +15,7 @@ const AboutSection = () => {
   };
   return (
     <motion.div
-      className="w-11/12 h-auto lg:w-2/3"
+      className="w-11/12 h-auto lg:w-5/6 xl:w-3/4 2xl:w-2/3 "
       variants={scrollAnimation}
       initial="offscreen"
       whileInView={"onscreen"}
