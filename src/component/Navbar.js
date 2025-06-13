@@ -36,19 +36,19 @@ const Navbar = ({ open, setOpen }) => {
           <div className="flex flex-row ">
             <a href="#about">
               <motion.p
-                className="font-primary text-navtextcolor text-lg mr-6 tracking-wide hover:text-redEdit hover:duration-200 cursor-pointer"
+                className="font-medium text-navtextcolor text-lg mr-20 tracking-wide hover:text-redEdit hover:duration-200 cursor-pointer"
                 variants={NavAnimation}
                 initial="offscreen"
                 animate="onscreen"
                 transition={{ type: "spring", bounce: 0, duration: 3 }}
               >
-                Abouts
+                About
               </motion.p>
             </a>
             <a href="#skill">
               {" "}
               <motion.p
-                className="font-primary text-navtextcolor text-lg mr-6 tracking-wide hover:text-redEdit hover:duration-200 cursor-pointer"
+                className="font-medium text-navtextcolor text-lg mr-20 tracking-wide hover:text-redEdit hover:duration-200 cursor-pointer"
                 variants={NavAnimation}
                 initial="offscreen"
                 animate="onscreen"
@@ -64,7 +64,7 @@ const Navbar = ({ open, setOpen }) => {
             </a>
             <a href="#work">
               <motion.p
-                className="font-primary text-navtextcolor text-lg mr-6 tracking-wide hover:text-redEdit hover:duration-200 cursor-pointer"
+                className="font-medium text-navtextcolor text-lg mr-20 tracking-wide hover:text-redEdit hover:duration-200 cursor-pointer"
                 variants={NavAnimation}
                 initial="offscreen"
                 animate="onscreen"
@@ -80,7 +80,7 @@ const Navbar = ({ open, setOpen }) => {
             </a>
             <a href="#contact">
               <motion.p
-                className="font-primary text-navtextcolor text-lg mr-6 tracking-wide hover:text-redEdit hover:duration-200 cursor-pointer"
+                className="font-medium text-navtextcolor text-lg mr-20 tracking-wide hover:text-redEdit hover:duration-200 cursor-pointer"
                 variants={NavAnimation}
                 initial="offscreen"
                 animate="onscreen"

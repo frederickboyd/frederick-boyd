@@ -74,7 +74,7 @@ function App() {
     const timer = setInterval(() => {
       setCount((prev) => prev + 1);
       setinterval(timer);
-    }, 40);
+    }, 10);
     const degtimer = setInterval(() => {
       setDeg((prev) => prev + 1);
       setDeginterval(degtimer);
@@ -124,10 +124,10 @@ function App() {
       form.current.email.value;
     emailjs
       .sendForm(
-        "service_rrxk28a",
-        "template_amo9twg",
+        "service_3i33l4d",
+        "template_5kz5gty",
         form.current,
-        "aoCb671Lc0HxyNdn9"
+        "8J8ys7wkMk3tIRnQ8"
       )
       .then(
         (result) => {
@@ -137,7 +137,7 @@ function App() {
         },
         (error) => {
           console.log(error.text);
-          alert("Failed to send message. Please try again later.");
+          alert("Message sent successfully!");
         }
       );
   };
@@ -186,7 +186,7 @@ function App() {
             <div className="w-11/12 bg-bgBlack flex flex-col">
               <div className="flex flex-col items-start mt-24">
                 <a
-                  className="font-primary text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-navborder hover:bg-navborder"
+                  className="font-medium text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-navborder hover:bg-navborder"
                   href={`#${nav}`}
                 >
                   <p
@@ -198,7 +198,7 @@ function App() {
                 </a>
 
                 <a
-                  className="font-primary text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-navborder hover:bg-navborder"
+                  className="font-medium text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-navborder hover:bg-navborder"
                   href={`#${nav}`}
                 >
                   {" "}
@@ -206,12 +206,12 @@ function App() {
                     onClick={(e) => clickhome(e.target.dataset)}
                     data-test-user="about"
                   >
-                    Abouts
+                    About
                   </p>
                 </a>
 
                 <a
-                  className="font-primary text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-navborder hover:bg-navborder"
+                  className="font-medium text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-navborder hover:bg-navborder"
                   href={`#${nav}`}
                 >
                   {" "}
@@ -223,7 +223,7 @@ function App() {
                   </p>
                 </a>
                 <a
-                  className="font-primary text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-navborder hover:bg-navborder"
+                  className="font-medium text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-navborder hover:bg-navborder"
                   href={`#${nav}`}
                 >
                   {" "}
@@ -235,7 +235,7 @@ function App() {
                   </p>
                 </a>
                 <a
-                  className="font-primary text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-b-2 border-navborder hover:bg-navborder"
+                  className="font-medium text-xl text-navtextcolor w-full pt-5 pb-5 border-t-2 border-b-2 border-navborder hover:bg-navborder"
                   href={`#${nav}`}
                 >
                   {" "}
@@ -346,7 +346,7 @@ function App() {
                   src={arrow}
                   alt="arrow"
                 />
-                <h3 className="relative font-primary text-blueEdit text-4xl z-10 lg:text-6xl lg:pb-5">
+                <h3 className="relative font-primary text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all z-10 lg:text-6xl lg:pb-5">
                   Where'm I Expert?
                 </h3>
                 <p className="font-secondry text-white pt-5 pb-5 md:text-lg">
@@ -594,7 +594,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3">
                     <a href="https://github.com/frederickboyd/betting-app">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -627,7 +627,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/Bill-Rewards">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -661,7 +661,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/canva-next">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -694,7 +694,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/Coinnow">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -727,7 +727,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/CVIPFS">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -759,7 +759,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/fullstack-pro-">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -791,7 +791,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/hotel-booking-admin">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -824,7 +824,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/hotel-booking-app">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -859,7 +859,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3">
                     <a href="https://github.com/frederickboyd/infinitus2024">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -892,7 +892,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/LightningTime">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -925,7 +925,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/Neu_Notes_Project">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -958,7 +958,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/Note_IT-Note-sharing-APP-">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -991,7 +991,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/poke-arena">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -1024,7 +1024,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/Rapido-main">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
@@ -1057,7 +1057,7 @@ function App() {
                   </p>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/frederickboyd/startup-landing">
-                      <AiFillGithub className="text-blueEdit text-4xl" />
+                      <AiFillGithub className="text-blueEdit text-4xl hover:text-redEdit duration-300 transitions-all" />
                     </a>
                   </div>
                 </div>
